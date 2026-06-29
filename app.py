@@ -186,8 +186,6 @@ if st.button("🚀 Predict Salary", use_container_width=True):
             f"### 💰 Predicted Salary : ₹ {salary:,.2f}"
         )
 
-        st.balloons()
-
         st.subheader("Employee Details")
 
         st.dataframe(
@@ -198,29 +196,3 @@ if st.button("🚀 Predict Salary", use_container_width=True):
     except Exception as e:
 
         st.error(f"Prediction Error : {e}")
-
-# -------------------------------------------------
-# Footer
-# -------------------------------------------------
-
-st.markdown("---")
-
-st.markdown(
-"""
-### Project Information
-
-**Model**
-- Artificial Neural Network (ANN)
-
-**Preprocessing**
-- StandardScaler
-- OneHotEncoder
-- ColumnTransformer
-
-**Hyperparameter Tuning**
-- Optuna
-
-**Evaluation Metric**
-- R² Score
-"""
-)
